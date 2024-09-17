@@ -1,6 +1,7 @@
 from typing import Any
 import uuid
 import logging
+from robinhood_api_trading import CryptoAPITrading
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
