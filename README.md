@@ -14,7 +14,7 @@ Algorithmic-Trading-in-Python/
 ├── main.py                        # Entry point for the application
 ├── trading_scheduler.py           # Scheduler and strategy execution logic
 ├── trading_strategy.py            # Contains all trading strategies (BTC_trading_strategy, etc.)
-├── crypto_api_trading.py          # API interaction logic for Robinhood or other platforms
+├── robinhood_api_trading.py          # API interaction logic for Robinhood or other platforms
 ├── generate_keypair.py            # Script to generate API keys
 ├── config/
 │   ├── api_config.py              # API key and logging configurations
