@@ -11,7 +11,7 @@ def main():
     print(api_trading_client.get_account())
 
     # Start the scheduler with the trading strategy function and desired interval
-    start_scheduler(BTC_trading_strategy, 1)  # Run trading strategy every 10 seconds
+    start_scheduler(BTC_trading_strategy, 10)  # Run trading strategy every 10 seconds
     
     # Fetch and print account details
     print("Account details:")
