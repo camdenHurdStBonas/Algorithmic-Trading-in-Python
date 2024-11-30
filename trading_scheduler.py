@@ -5,9 +5,14 @@ import threading
 from typing import Callable, List, Tuple
 import functools
 from robinhood_api_trading import CryptoAPITrading
+from config.api_config import LOGGING_CONFIG
 
-# Configure logging
-logging.basicConfig(filename='trading_scheduler.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging using the dictionary
+logging.basicConfig(
+    filename=LOGGING_CONFIG["filename"],
+    level=LOGGING_CONFIG["level"],
+    format=LOGGING_CONFIG["format"]
+)
 
 def get_account_value(api_trading_client: CryptoAPITrading) -> float:
     """
