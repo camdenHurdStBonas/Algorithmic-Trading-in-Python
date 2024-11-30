@@ -5,9 +5,7 @@ from typing import Any, Dict, Optional
 import uuid
 import requests
 from cryptography.hazmat.primitives.asymmetric import ed25519
-
-API_KEY = "PUT_API_KEY_HERE"
-BASE64_PRIVATE_KEY = "PUT_PRIVATE_KEY_HERE"
+from config.api_config import API_KEY, BASE64_PRIVATE_KEY
 
 class CryptoAPITrading:
     def __init__(self):
