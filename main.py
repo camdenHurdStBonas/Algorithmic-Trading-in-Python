@@ -1,5 +1,5 @@
 # main.py
-from scheduler import start_scheduler
+from trading_scheduler import start_scheduler
 from robinhood_api_trading import CryptoAPITrading
 from btc_trading_strategy import BTC_trading_strategy
 
