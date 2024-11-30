@@ -14,7 +14,7 @@ import os
 logging.basicConfig(level=logging.INFO)
 
 # Define a threshold for stopping trades
-ACCOUNT_VALUE_THRESHOLD = 12500  # Set your desired threshold here
+ACCOUNT_VALUE_THRESHOLD = 10000  # Set your desired threshold here
 
 def get_account_value(api_trading_client: CryptoAPITrading) -> float:
     """
@@ -86,7 +86,7 @@ def fetch_historical_data(symbol: str = "BTC/USD",start_date: str = '2022-01-01T
     # Return the closing prices
     return price_data.set_index('timestamp')
 
-def calculate_macd(prices: pd.Series, short_window: int = 60, long_window: int = 69, signal_window: int = 8) -> pd.DataFrame:
+def calculate_macd(prices: pd.Series, short_window: int = 20, long_window: int = 30, signal_window: int = 9) -> pd.DataFrame:
     """
     Calculates MACD values for a given price series.
     
@@ -124,7 +124,7 @@ def calculate_macd(prices: pd.Series, short_window: int = 60, long_window: int =
     # If no crossover, return 'hold'
     return 'hold'
 
-def calculate_mvcd(prices: pd.Series, short_window: int = 60, long_window: int = 69, signal_window: int = 8) -> pd.DataFrame:
+def calculate_mvcd(prices: pd.Series, short_window: int = 20, long_window: int = 30, signal_window: int = 9) -> pd.DataFrame:
     """
     Calculates MACD values for a given price series.
     
