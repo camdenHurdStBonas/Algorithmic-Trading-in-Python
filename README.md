@@ -120,7 +120,7 @@ For detailed descriptions, see [Strategy Documentation](docs/strategy_docs.md).
 
 Run unit tests to validate functionality:
 ```bash
-pytest tests/
+python -m unittest discover tests/
 ```
 
 ---
