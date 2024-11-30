@@ -278,7 +278,7 @@ def execute_trade(api_trading_client: CryptoAPITrading, signal: str, symbol: str
                 # Place sell order to close active trade
                 client_order_id = str(uuid.uuid4())
                 order_config = {"amount": str(trade_data["trade_size"])}  # Sell the amount from active trade
-                #api_trading_client.place_order(client_order_id, side='ask', order_type='market', symbol=symbol, order_config=order_config)
+                api_trading_client.place_order(client_order_id, side='ask', order_type='market', symbol=symbol, order_config=order_config)
                 save_trade_data(trade_data["symbol"], 0, 0, 0, status="closed")
                 logging.info(f"Active trade for {trade_data['symbol']} closed.")
             else:
@@ -309,7 +309,7 @@ def execute_trade(api_trading_client: CryptoAPITrading, signal: str, symbol: str
 
             # Place buy order
             order_config = {"amount": str(trade_size)}
-            #api_trading_client.place_order(client_order_id, side='bid', order_type='market', symbol=symbol, order_config=order_config)
+            api_trading_client.place_order(client_order_id, side='bid', order_type='market', symbol=symbol, order_config=order_config)
             
             stop_loss_price = current_price * (1 - stop_loss_percent)
             take_profit_price = current_price * (1 + take_profit_percent)
