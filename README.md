@@ -27,6 +27,7 @@ Algorithmic-Trading-in-Python/
 │   ├── strategy_docs.md           # Detailed explanation of implemented strategies
 │   ├── api_docs.md                # Details about the API and its integration
 │   └── architecture_overview.md   # Project architecture description
+├── requirements.txt               # Dependency file
 └── README.md                      # Project documentation
 ```
 
