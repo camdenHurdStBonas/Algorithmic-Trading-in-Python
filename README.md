@@ -160,7 +160,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## 🙋‍♂️ Questions?
 
-Feel free to open an issue or contact us at [your-email@example.com].
+Feel free to open an issue or contact us at [hurdc21@bonaventure.edu].
 
 ---
 
