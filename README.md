@@ -165,4 +165,3 @@ Feel free to open an issue or contact us at [hurdc21@bonaventure.edu].
 
 ---
 
-Let me know if you'd like to modify any sections or add examples and images!
